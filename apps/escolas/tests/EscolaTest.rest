@@ -1,0 +1,43 @@
+### Inserir uma nova escola
+POST http://localhost:4000/escolas/insertEscola
+Authorization: Bearer seu_token_aqui
+Content-Type: application/json
+
+{
+    "codigo": "001",
+    "nome": "Escola A",
+    "dataAbertura": "2023-01-01"
+}
+
+### Obter uma escola pelo ID
+POST http://localhost:4000/escolas/getEscolaByID
+Authorization: Bearer seu_token_aqui
+Content-Type: application/json
+
+{
+    "id": "ID_DA_ESCOLA"
+}
+
+### Obter todas as escolas
+GET http://localhost:4000/escolas/getAllEscolas
+Authorization: Bearer seu_token_aqui
+
+### Atualizar uma escola
+POST http://localhost:4000/escolas/updateEscola
+Authorization: Bearer seu_token_aqui
+Content-Type: application/json
+
+{
+    "id": "ID_DA_ESCOLA",
+    "nome": "Escola Atualizada",
+    "dataAbertura": "2023-01-02"
+}
+
+### Deletar uma escola
+POST http://localhost:4000/escolas/deleteEscola
+Authorization: Bearer seu_token_aqui
+Content-Type: application/json
+
+{
+    "id": "ID_DA_ESCOLA"
+}
